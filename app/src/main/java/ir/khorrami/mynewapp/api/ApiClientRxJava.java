@@ -1,10 +1,11 @@
 package ir.khorrami.mynewapp.api;
 
+import hu.akarnokd.rxjava3.retrofit.RxJava3CallAdapterFactory;
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class ApiClient {
+public class ApiClientRxJava {
 
     private static final String BASE_URL="http://10.0.2.2:5012/api/";
 //    private static final String BASE_URL="http://10.0.2.2:5012/api/";
@@ -16,24 +17,24 @@ public class ApiClient {
 
 
     Retrofit retrofit;
-    static ApiClient apiClient;
+    static ApiClientRxJava apiClientRxJava;
 
-    public ApiClient() {
+    public ApiClientRxJava() {
         OkHttpClient client = new OkHttpClient();
         retrofit = new Retrofit.Builder()
                 .baseUrl(BASE_URL)
-               // .client(client)
+                .addCallAdapterFactory(RxJava3CallAdapterFactory.create())
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
     }
+    
 
-
-    public static ApiClient GetInstance()
+    public static ApiClientRxJava GetInstance()
     {
-        if(apiClient == null)
-            apiClient = new ApiClient();
+        if(apiClientRxJava == null)
+            apiClientRxJava = new ApiClientRxJava();
 
-        return  apiClient;
+        return  apiClientRxJava;
     }
 
     public Api GetApi()

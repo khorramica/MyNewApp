@@ -34,6 +34,8 @@ public class EmployeAdapter extends RecyclerView.Adapter<EmployeAdapter.MyViewHo
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         holder.txtName.setText(data.get(position).getEmployeeName());
+        holder.txtCity.setText(data.get(position).getCity());
+        holder.txtBirth.setText(data.get(position).getDateOfBirth());
     }
 
     @Override
@@ -43,11 +45,13 @@ public class EmployeAdapter extends RecyclerView.Adapter<EmployeAdapter.MyViewHo
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
 
-        TextView txtName;
+        TextView txtName,txtCity,txtBirth;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
-            txtName = itemView.findViewById(R.id.text_Name);
+            txtName = itemView.findViewById(R.id.txt_Name_List);
+            txtCity = itemView.findViewById(R.id.txt_City_List);
+            txtBirth = itemView.findViewById(R.id.txt_Birth_List);
         }
     }
 }

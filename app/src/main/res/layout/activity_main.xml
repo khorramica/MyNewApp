@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".view.MainActivity">
 
 <!--<androidx.recyclerview.widget.RecyclerView-->
 <!--    android:layout_width="match_parent"-->
@@ -17,7 +17,29 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:text="Sample text"
-        android:id="@+id/text_Name"/>
+        android:id="@+id/txt_Name"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_City"
+        android:layout_below="@id/txt_Name"
+        android:text="City"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        android:textSize="18dp"
+        android:textStyle="bold|italic"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/txt_nameByID"
+    android:textStyle="bold"
+    android:textSize="20sp"
+    android:layout_centerInParent="true"
+    android:layout_below="@id/txt_City"
+    android:layout_marginTop="16dp"
+    android:text="Date"
+    android:textColor="#FF5722"/>
 
 </RelativeLayout>

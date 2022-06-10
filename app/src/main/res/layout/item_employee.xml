@@ -1,14 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <TextView
-        android:id="@+id/text_Name"
-        android:layout_centerInParent="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-         />
-</RelativeLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/lbl_Name"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:text="Name:"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/txt_Name_List"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toRightOf="@id/lbl_Name"
+                    android:text="Name" />
+
+                <TextView
+                    android:id="@+id/lbl_City"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lbl_Name"
+                    android:text="City:"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/txt_City_List"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lbl_Name"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toRightOf="@id/lbl_City"
+                    android:text="City" />
+
+
+                <TextView
+                    android:id="@+id/lbl_Birth"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lbl_City"
+                    android:text="Birth Date:"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/txt_Birth_List"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_City_List"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toRightOf="@id/lbl_Birth"
+                    android:text="Birth date" />
+            </RelativeLayout>
+        </LinearLayout>
+
+</androidx.cardview.widget.CardView>

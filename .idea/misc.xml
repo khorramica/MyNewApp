@@ -3,6 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Projects/Android/MyNewApp/app/src/main/res/layout/activity_binder_list.xml" value="0.23802083333333332" />
+        <entry key="..\:/Projects/Android/MyNewApp/app/src/main/res/layout/activity_binder_list_by_view_model.xml" value="0.23802083333333332" />
+        <entry key="..\:/Projects/Android/MyNewApp/app/src/main/res/layout/activity_binder_test.xml" value="0.3970460469157255" />
+        <entry key="..\:/Projects/Android/MyNewApp/app/src/main/res/layout/activity_binding.xml" value="0.23802083333333332" />
+        <entry key="..\:/Projects/Android/MyNewApp/app/src/main/res/layout/activity_main.xml" value="0.72" />
+        <entry key="..\:/Projects/Android/MyNewApp/app/src/main/res/layout/activity_reza.xml" value="0.23802083333333332" />
+        <entry key="..\:/Projects/Android/MyNewApp/app/src/main/res/layout/activity_show_list.xml" value="0.23802083333333332" />
+        <entry key="..\:/Projects/Android/MyNewApp/app/src/main/res/layout/activity_view_model.xml" value="0.23802083333333332" />
+        <entry key="..\:/Projects/Android/MyNewApp/app/src/main/res/layout/activity_view_model_binder.xml" value="0.22395833333333334" />
+        <entry key="..\:/Projects/Android/MyNewApp/app/src/main/res/layout/item_employee.xml" value="0.4" />
+        <entry key="..\:/Projects/Android/MyNewApp/app/src/main/res/xml/network_security_config.xml" value="0.23802083333333332" />
         <entry key="..\:/projects/Android/Learning/MyNewApp/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/projects/Android/Learning/MyNewApp/app/src/main/res/layout/item_employee.xml" value="0.34923076923076923" />
       </map>

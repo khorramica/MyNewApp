@@ -15,6 +15,12 @@ public class Employee {
         this.pinCode = pinCode;
     }
 
+    public Employee(String employeeName, String dateOfBirth, String city) {
+        this.employeeName = employeeName;
+        this.dateOfBirth = dateOfBirth;
+        this.city = city;
+    }
+
     public int getEmployeeId() {
         return employeeId;
     }
